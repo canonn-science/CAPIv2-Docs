@@ -1,51 +1,51 @@
 {
-  "name": "capiv2-docs",
-  "private": true,
-  "version": "2.0.17",
-  "description": "Public documentation for the Canonn API v2",
-  "repository": "https://github.com/canonn-science/CAPIv2-Docs",
-  "main": "index.js",
-  "scripts": {
-    "docs:dev": "vuepress dev docs",
-    "docs:build": "vuepress build docs"
-  },
-  "dependencies": {
-      "directory-tree": "^2.1.0",
-      "markdown-it-decorate": "^1.2.2",
-      "vuepress": "^0.14.2",
-      "cache-loader": "1.2.2"
-  },
-  "devDependencies": {
-      "markdown-it-container": "^2.0.0"
-  },
-  "author": {
-      "name": "Canonn R&D",
-      "email": "rd@canonn.technology",
-      "url": "https://canonn.science"
-  },
-  "maintainers": [
-      {
-          "name": "dmehaffy",
-          "email": "dmehaffy@canonn.technology",
-          "discord": "DMehaffy#1337",
-          "url": "https://canonn.science"
-      },
-      {
-          "name": "Vall",
-          "discord": "[R&D] Vall#4954"
-      },
-      {
-          "name": "AdmlAdama",
-          "discord": "AdmlAdama#4461 "
-      },
-      {
-          "name": "NoFool",
-          "discord": "LCU No Fool Like One#4293"
-      }
-  ],
-  "engines": {
-      "node": ">= 10.0.0",
-      "npm": ">= 6.0.0"
-  },
-  "license": "GPL-3.0"
+    "name": "capiv2-docs",
+    "private": true,
+    "version": "2.0.17",
+    "description": "Public documentation for the Canonn API v2",
+    "repository": "https://github.com/canonn-science/CAPIv2-Docs",
+    "main": "index.js",
+    "scripts": {
+        "docs:dev": "vuepress dev docs",
+        "docs:build": "vuepress build docs"
+    },
+    "dependencies": {
+        "directory-tree": "^2.1.0",
+        "markdown-it-decorate": "^1.2.2",
+        "vuepress": "^0.14.2",
+        "cache-loader": "1.2.2"
+    },
+    "devDependencies": {
+        "markdown-it-container": "^2.0.0"
+    },
+    "author": {
+        "name": "Canonn R&D",
+        "email": "rd@canonn.technology",
+        "url": "https://canonn.science"
+    },
+    "maintainers": [
+        {
+            "name": "dmehaffy",
+            "email": "dmehaffy@canonn.technology",
+            "discord": "DMehaffy#1337",
+            "url": "https://canonn.science"
+        },
+        {
+            "name": "Vall",
+            "discord": "[R&D] Vall#4954"
+        },
+        {
+            "name": "AdmlAdama",
+            "discord": "AdmlAdama#4461 "
+        },
+        {
+            "name": "NoFool",
+            "discord": "LCU No Fool Like One#4293"
+        }
+    ],
+    "engines": {
+        "node": ">= 10.0.0",
+        "npm": ">= 6.0.0"
+    },
+    "license": "GPL-3.0"
 }

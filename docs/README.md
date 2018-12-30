@@ -6,28 +6,13 @@ meta:
   - name: keywords
     content: js vuejs vuepress
 ---
+# Canonn API v2
 
-# Canonn APIv2 Documentation
+[![CAPIv2 Version](https://img.shields.io/badge/capiv2-v2.0.17-orange.svg)](https://api.canonn.tech:2083)
+[![Build Status](https://travis-ci.org/canonn-science/CAPIv2-Strapi.svg?branch=development)](https://travis-ci.org/canonn-science/CAPIv2-Strapi)
+[![EDCD Discord](https://img.shields.io/discord/164411426939600896.svg?logo=discord&label=EDCD%20Discord)](https://discord.gg/fhDWZBH)
+[![Canonn Discord](https://img.shields.io/discord/146714487695605760.svg?logo=discord&label=Canonn%20Discord)](https://discord.gg/HzzmG2f)
 
-> Public documentation for the Canonn API v2
+Keeping a record of all the science and mystery onboard the Gnosis.
 
-<p align="center">
-  <img src="./images/research-and-development-with-text.png" />
-</p>
-
-## About
-
-The Canonn API was built in order to catelog all the science and mystery related to Elite Dangerous, like many other APIs that run the backbone of the EDCD group. Our goal is simply to offer our findings in such a way that other developers may use our data quickly and easily in their own projects while also being able to contribute to our data.
-
-## Our Github Repos
-
-All of our projects are open sourced and licensed under the GNU GPL 3.0 license and can be viewed on our github:
-
-* [Canonn-Science Repo](https://github.com/canonn-science)
-* [CAPIv2 Core API](https://github.com/canonn-science/CAPIv2-Strapi)
-* [CAPIv2 Updater](https://github.com/canonn-science/CAPIv2-Updater)
-* [CAPIv2 Docs](https://github.com/canonn-science/CAPIv2-Docs)
-
-## Contributing to our Projects
-
-If you wish to help us and contribute to our projects please reach out to CMDR DMehaffy on Discord: `DMehaffy#1337`, and please read our [Code of Conduct](https://github.com/canonn-science/CAPIv2-Strapi/blob/development/CODE_OF_CONDUCT.md).
+![Canonn Logo](./images/research-and-development-with-text.png)
