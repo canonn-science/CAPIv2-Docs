@@ -1,2 +1,3 @@
-# CAPIv2-Docs
-Public Documentation for the Canonn API
+# Canonn APIv2 Documentation Repo
+
+ReadMe stuff coming soon-ish (tm)
