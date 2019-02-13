@@ -2,6 +2,7 @@ module.exports = {
   title: 'CAPIv2 - Documentation',
   description: 'Public documentation for the Canonn API v2',
   ga: '',
+  theme: 'dark-new',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },

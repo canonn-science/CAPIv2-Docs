@@ -16,7 +16,8 @@
         "cache-loader": "1.2.2"
     },
     "devDependencies": {
-        "markdown-it-container": "^2.0.0"
+        "markdown-it-container": "^2.0.0",
+        "vuepress-theme-dark-new": "^0.1.2"
     },
     "author": {
         "name": "Canonn R&D",
