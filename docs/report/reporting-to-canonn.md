@@ -8,7 +8,7 @@ Below we will break down the process of sendings to Canonn on a site by site bas
 
 ## Breakdown of Report Fields
 
-Of course to start you need to know what data to send, how to format it, and where to send it to; thus first we need to breakdown the report structure. In this example we will be working with Brain Trees which you can see more information on BTs [here](./btreports.html).
+Of course to start you need to know what data to send, how to format it, and where to send it to; thus first we need to breakdown the report structure. In this example we will be working with Brain Trees which you can see more information on BTs [here](./reporttypes.html#bt-brain-trees).
 
 ### Report Structure
 
@@ -84,7 +84,7 @@ Typically mosts will be `new` as both `update` and `error` require a few extra f
 * Required: No
 * Default: `false`
 
-With Elite Dangerous betas, we do not validate anys submitted, however we do still take them. If your client supports running on ED Beta releases you **have** to send this value. If you are running on a release version, you do not need to send this as by default it is `false`.
+With Elite Dangerous beta builds, we do not validate any reports submitted, however we do still take them. If your client supports running on ED Beta releases you **have** to send this value. If you are running on a release version, you do not need to send this as by default it is `false`.
 
 ---
 
@@ -103,7 +103,9 @@ With Elite Dangerous betas, we do not validate anys submitted, however we do sti
 
 Report status is used by us in Canonn to track the progress of a report, all news no matter their type should be sent as `pending` only. Our updater and a few other tools of ours will update this value depending on checks in place or due to manual intervention.
 
-**Important:** If you attempt to send an improper value or try to update this value yourself, your client can and will be blacklisted!
+::: danger
+If you attempt to send an improper value or try to update this value yourself, your client and/or CMDR can and will be blacklisted!
+:::
 
 ---
 

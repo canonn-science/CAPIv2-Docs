@@ -20,15 +20,19 @@ module.exports = {
         collapsable: true,
         title: '🔑 Authentication',
         children: [
-          '/auth/discord.md'
+          '/auth/discord',
+          '/auth/security'
         ],
       },
       {
         collapsable: true,
         title: '📚 API Reference',
         children: [
+          '/api/3rdparty',
+          '/api/environments',
           '/api/filters',
-          '/api/graphql'
+          '/api/graphql',
+          '/api/swagger'
         ],
       },
       {
@@ -58,7 +62,7 @@ module.exports = {
         collapsable: true,
         title: '🏗 Tools',
         children: [
-          '/tool/capiv2.md',
+          '/tool/capiv2',
           '/tool/updater',
           '/tool/athena',
           '/tool/athens'

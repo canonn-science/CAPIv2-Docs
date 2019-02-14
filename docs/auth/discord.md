@@ -1,1 +1,1 @@
-# Discord Authentication
+# Discord OAuth
