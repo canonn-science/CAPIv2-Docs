@@ -2,7 +2,6 @@ module.exports = {
   title: 'CAPIv2 - Documentation',
   description: 'Public documentation for the Canonn API v2',
   ga: '',
-  theme: 'dark-new',
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -19,11 +18,25 @@ module.exports = {
       },
       {
         collapsable: true,
+        title: '🔑 Authentication',
+        children: [
+          '/auth/discord.md'
+        ],
+      },
+      {
+        collapsable: true,
+        title: '📚 API Reference',
+        children: [
+          '/api/filters',
+          '/api/graphql'
+        ],
+      },
+      {
+        collapsable: true,
         title: '🚀 Sites',
         children: [
           '/site/what-is-a-site',
-          '/site/barkmoundsites',
-          '/site/braintreesites'
+          '/site/sitetypes'
         ],
       },
       {
@@ -31,8 +44,14 @@ module.exports = {
         title: '💻 Reporting',
         children: [
           '/report/reporting-to-canonn',
-          '/report/barkmoundreports',
-          '/report/braintreereports'
+          '/report/reporttypes'
+        ],
+      },
+      {
+        collapsable: true,
+        title: '⚙️️ Validation',
+        children: [
+          '/validation/report-to-site'
         ],
       },
       {
