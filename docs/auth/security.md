@@ -6,7 +6,7 @@ While much of the data we gather is checked and verified there are some cases wh
 
 Below you will find some of the examples of blacklists that we currently use, a few of them are related to Journal Entries that we do not track and thus do not wish to receive the data, while the others related to clients and/or users which we have deemed to be using our API infrastructure improperly.
 
-If you feel you or your software has been added to one of our blacklists due to an error you may contact CMDR DMehaffy on discord: `DMehaffy@1337`. 
+If you feel you or your software has been added to one of our blacklists due to an error you may contact CMDR DMehaffy on discord: `DMehaffy@1337`.
 
 ::: danger
 If we deem that you are using our API to attempt to track pilots locations, harass, abuse, or for any other reason that is deemed by us to be a negative influence related to the discovery and/or research of science related data. You will be blacklisted and will not be removed.
@@ -19,6 +19,10 @@ Please note that by using our API you agree to only use the data gathered in a p
 ## Our Blacklists
 
 All of our blacklists are freely open to be viewed, you may and are encourged to use them in your applications to ensure you are only sending data we want and need. Below you will find our common blacklists and the data they contain.
+
+::: warning
+Please note that these endpoints can be updated at any time, thus it is recommended that your application check these endpoints either at startup or at a scheduled time frame to ensure you have the most up to date list.
+:::
 
 ### Clients
 
@@ -78,11 +82,7 @@ To view the CMDR blacklist you may use the following example on our Staging Serv
 
 New in Elite Dangerous v3.3 and above the addition of the codex provides a wealth of information, there are some codex entries that Canonn does not track and will not in the forseeable future, due to this we maintain a list of codex entries that we do not wish to receive. You should use this endpoint to ensure you are not sending these entries to us.
 
-Please note that we do trim the journal entry a bit such as removing the leading `$`, tailing `_name;`, and converting the entry type to all lowercase.
-
-::: warning
-Please note that this endpoint can be updated at any time, thus it is recommended that your application check this endpoints either at startup or at a scheduled time frame to ensure you have the most up to date list
-:::
+Please note that we do trim the codex journal entry a bit such as removing the leading `$`, tailing `_name;`, and converting the entry type to all lowercase.
 
 To view the Codex Entry blacklist you may use the following example on our Staging Server:
 
@@ -116,8 +116,87 @@ To view the Codex Entry blacklist you may use the following example on our Stagi
 
 ### Journal Events
 
+There are some journal entries that Canonn does not track and will not in the forseeable future, due to this we maintain a list of entries that we do not wish to receive. You should use this endpoint to ensure you are not sending data we don't need as other sources such as EDSM, Inara, and EDDB track these.
+
+To view the Codex Entry blacklist you may use the following example on our Staging Server:
+
+`GET https://api.canonn.tech:2053/excludeevents`
+
+```json
+[
+    {
+        "id": 1,
+        "eventName": "StartUp",
+        "reason": "EDMC Event",
+        "created_at": "2019-01-23T01:02:36.000Z",
+        "updated_at": "2019-01-23T01:02:36.000Z"
+    },
+    {
+        "id": 2,
+        "eventName": "Fileheader",
+        "reason": "Unknown Reason",
+        "created_at": "2019-01-23T01:02:36.000Z",
+        "updated_at": "2019-01-23T01:02:36.000Z"
+    },
+    {
+        "id": 3,
+        "eventName": "Music",
+        "reason": "Unknown Reason",
+        "created_at": "2019-01-23T01:02:36.000Z",
+        "updated_at": "2019-01-23T01:02:36.000Z"
+    },
+    {
+        "id": 4,
+        "eventName": "Friends",
+        "reason": "Canonn doesn't need this data",
+        "created_at": "2019-01-23T01:02:36.000Z",
+        "updated_at": "2019-01-23T01:02:36.000Z"
+    },
+    {
+        "id": 5,
+        "eventName": "Cargo",
+        "reason": "Canonn doesn't need this data",
+        "created_at": "2019-01-23T01:02:36.000Z",
+        "updated_at": "2019-01-23T01:02:36.000Z"
+    }
+]
+```
 
 ### FSS Scan Events
 
+Much like codex entries there are quite a few FSS Scan events that Canonn doesn't track because other services like EDSM do, instead we sync with EDSM to grab this data if we need it. Just like Codex and Journal Events we have a list of excludes for FSS as well.
+
+To view the Codex Entry blacklist you may use the following example on our Staging Server:
+
+`GET https://api.canonn.tech:2053/excludefsses`
+
+```json
+[
+  {
+    "id": 10,
+    "fssName": "test_scan_body",
+    "reason": "Body scan data",
+    "created_at": "2019-02-15T11:34:00.000Z",
+    "updated_at": "2019-02-15T11:34:00.000Z"
+  }
+]
+```
 
 ### Unknown Signal Source Events
+
+Very similar to FSS Scan events, Canonn only Tracks Non-Human Signal Sources in order to monitor Thargoid activity. Thus pretty much all other USS types are added to our excludes, in which we add new ones as we get them in case any new types show up that might be of interest to us.
+
+To view the Codex Entry blacklist you may use the following example on our Staging Server:
+
+`GET https://api.canonn.tech:2053/excludeusses`
+
+```json
+[
+  {
+    "id": 10,
+    "fssName": "test_uss_type",
+    "reason": "Non-Thargoid USS Event",
+    "created_at": "2019-02-15T11:34:00.000Z",
+    "updated_at": "2019-02-15T11:34:00.000Z"
+  }
+]
