@@ -65,6 +65,6 @@ We may update our Privacy Policy from time to time. We will notify you of any ch
 
 As we do not store user email addresses, we will be unable to notify you via any other means on when these changes will be made effective, it is your job as the user should you wish to continue using our service that you read and understand this policy.
 
-## Date of revision
+## Date of Revision
 
 This policy was revised on April 18th, 2019
