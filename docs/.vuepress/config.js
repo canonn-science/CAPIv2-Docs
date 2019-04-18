@@ -13,7 +13,8 @@ module.exports = {
         collapsable: false,
         title: 'Home',
         children: [
-          '/home/about'
+          '/home/about',
+          '/home/privacy'
         ],
       },
       {
