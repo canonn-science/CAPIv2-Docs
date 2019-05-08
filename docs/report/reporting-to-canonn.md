@@ -4,7 +4,7 @@ sidebarDepth: 3
 
 # Reporting to Canonn
 
-Below we will break down the process of sendings to Canonn on a site by site basis, along with sendings for data we may not have.
+Below we will break down the process of sending reports to Canonn on a site by site basis, along with sending reports for data we may not have.
 
 ## Breakdown of Report Fields
 
