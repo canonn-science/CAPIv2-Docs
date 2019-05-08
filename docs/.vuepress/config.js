@@ -2,6 +2,9 @@ module.exports = {
   title: 'CAPIv2 - Documentation',
   description: 'Public documentation for the Canonn API v2',
   ga: 'UA-102148507-7',
+  plugins: [
+    'flowchart'
+  ],
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
@@ -48,6 +51,7 @@ module.exports = {
         collapsable: true,
         title: '💻 Reporting',
         children: [
+          '/report/report-process',
           '/report/reporting-to-canonn',
           '/report/reporttypes'
         ],

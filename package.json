@@ -10,10 +10,11 @@
         "docs:build": "vuepress build docs"
     },
     "dependencies": {
+        "cache-loader": "1.2.2",
         "directory-tree": "^2.1.0",
         "markdown-it-decorate": "^1.2.2",
         "vuepress": "^0.14.2",
-        "cache-loader": "1.2.2"
+        "vuepress-plugin-flowchart": "^1.4.3"
     },
     "devDependencies": {
         "markdown-it-container": "^2.0.0",
