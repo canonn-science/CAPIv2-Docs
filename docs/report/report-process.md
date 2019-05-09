@@ -77,6 +77,9 @@ duplicate(yes)->addsite->attachsite->e
 @flowend
 
 ### CMDR Checking
+
+**WIP**
+
 @flowstart vue
 
 st=>start: Start CMDR Checking
@@ -86,6 +89,9 @@ st->e
 @flowend
 
 ### System & Body Checking
+
+**WIP**
+
 @flowstart vue
 
 st=>start: Start System & Body Checking
@@ -95,6 +101,9 @@ st->e
 @flowend
 
 ### Metadata Checking
+
+**WIP**
+
 @flowstart vue
 
 st=>start: Start Metadata Checking
