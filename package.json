@@ -13,10 +13,11 @@
         "cache-loader": "1.2.2",
         "directory-tree": "^2.1.0",
         "markdown-it-decorate": "^1.2.2",
-        "vuepress": "^0.14.2",
+        "vuepress": "^1.0.0-alpha.47",
         "vuepress-plugin-flowchart": "^1.4.3"
     },
     "devDependencies": {
+        "@vuepress/plugin-google-analytics": "^1.0.0-alpha.47",
         "markdown-it-container": "^2.0.0",
         "vuepress-theme-dark-new": "^0.1.2"
     },

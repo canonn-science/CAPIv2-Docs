@@ -1,78 +1,73 @@
 module.exports = {
-  title: 'CAPIv2 - Documentation',
-  description: 'Public documentation for the Canonn API v2',
-  ga: 'UA-102148507-7',
+  title: "CAPIv2 - Documentation",
+  description: "Public documentation for the Canonn API v2",
+  ga: "UA-102148507-7",
   plugins: [
-    'flowchart'
+    [
+      "@vuepress/google-analytics",
+      {
+        ga: "UA-102148507-7"
+      }
+    ],
+    "flowchart"
   ],
   themeConfig: {
     nav: [
-      { text: 'Home', link: '/' },
-      { text: 'Canonn', link: 'https://canonn.science' },
-      { text: 'Github', link: 'https://github.com/canonn-science' }
+      { text: "Home", link: "/" },
+      { text: "Canonn", link: "https://canonn.science" },
+      { text: "Github", link: "https://github.com/canonn-science" }
     ],
     sidebar: [
       {
         collapsable: false,
-        title: 'Home',
-        children: [
-          '/home/about',
-          '/home/privacy'
-        ],
+        title: "Home",
+        children: ["/home/about", "/home/privacy"]
       },
       {
         collapsable: true,
-        title: '🔑 Authentication',
-        children: [
-          '/auth/discord',
-          '/auth/security'
-        ],
+        title: "🔑 Authentication",
+        children: ["/auth/discord", "/auth/security"]
       },
       {
         collapsable: true,
-        title: '📚 API Reference',
+        title: "📚 API Reference",
         children: [
-          '/api/3rdparty',
-          '/api/environments',
-          '/api/filters',
-          '/api/graphql',
-          '/api/swagger'
-        ],
+          "/api/3rdparty",
+          "/api/environments",
+          "/api/filters",
+          "/api/graphql",
+          "/api/swagger"
+        ]
       },
       {
         collapsable: true,
-        title: '🚀 Sites',
-        children: [
-          '/site/what-is-a-site',
-          '/site/sitetypes'
-        ],
+        title: "🚀 Sites",
+        children: ["/site/what-is-a-site", "/site/sitetypes"]
       },
       {
         collapsable: true,
-        title: '💻 Reporting',
+        title: "💻 Reporting",
         children: [
-          '/report/report-process',
-          '/report/reporting-to-canonn',
-          '/report/reporttypes'
-        ],
+          "/report/report-process",
+          "/report/reporting-to-canonn",
+          "/report/reporttypes"
+        ]
       },
       {
         collapsable: true,
-        title: '⚙️️ Validation',
-        children: [
-          '/validation/report-to-site'
-        ],
+        title: "⚙️️ Validation",
+        children: ["/validation/report-to-site"]
       },
       {
         collapsable: true,
-        title: '🏗 Tools',
+        title: "🏗 Tools",
         children: [
-          '/tool/capiv2',
-          '/tool/updater',
-          '/tool/athena',
-          '/tool/athens'
+          "/tool/capiv2",
+          "/tool/updater",
+          "/tool/athena",
+          "/tool/athens"
         ]
       }
     ]
   }
-}
+};

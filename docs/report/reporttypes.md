@@ -400,6 +400,10 @@ Known types, see an update list you can query the following [endpoint](https://a
 
 Report Endpoint: `POST /gbreports`
 
+::: warning
+Please note this report endpoint contains a non-typical structure compared to most of our report endpoints
+:::
+
 Example Report Structure with minimum required data:
 
 ```json
@@ -425,6 +429,10 @@ Guardian Beacons have no known type.
 
 Report Endpoint: `POST /genreports`
 
+::: warning
+Please note this report endpoint contains a non-typical structure compared to most of our report endpoints
+:::
+
 Example Report Structure with minimum required data:
 
 ```json
@@ -448,6 +456,10 @@ Generation Ships have no known type.
 ## (GR) - Guardian Ruins
 
 Report Endpoint: `POST /grreports`
+
+::: warning
+Please note this report endpoint contains a non-typical structure compared to most of our report endpoints
+:::
 
 Example Report Structure with minimum required data:
 
@@ -497,6 +509,10 @@ Known types, see an update list you can query the following [endpoint](https://a
 ## (GS) - Guardian Structures
 
 Report Endpoint: `POST /gsreports`
+
+::: warning
+Please note this report endpoint contains a non-typical structure compared to most of our report endpoints
+:::
 
 Example Report Structure with minimum required data:
 
@@ -771,6 +787,10 @@ Known types, see an update list you can query the following [endpoint](https://a
 
 Report Endpoint: `POST /tbreports`
 
+::: warning
+Please note this report endpoint contains a non-typical structure compared to most of our report endpoints
+:::
+
 Example Report Structure with minimum required data:
 
 ```json
@@ -840,6 +860,10 @@ Known types, see an update list you can query the following [endpoint](https://a
 ## (TS) - Thargoid Structures
 
 Report Endpoint: `POST /tsreports`
+
+::: warning
+Please note this report endpoint contains a non-typical structure compared to most of our report endpoints
+:::
 
 Example Report Structure with minimum required data:
 
