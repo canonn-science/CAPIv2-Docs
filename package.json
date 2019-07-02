@@ -13,7 +13,7 @@
         "cache-loader": "1.2.2",
         "directory-tree": "^2.2.3",
         "markdown-it-decorate": "^1.2.2",
-        "vuepress": "^1.0.0-alpha.47",
+        "vuepress": "^1.0.2",
         "vuepress-plugin-flowchart": "^1.4.3"
     },
     "devDependencies": {
