@@ -10,7 +10,7 @@
         "docs:build": "vuepress build docs"
     },
     "dependencies": {
-        "cache-loader": "1.2.2",
+        "cache-loader": "4.0.1",
         "directory-tree": "^2.2.3",
         "markdown-it-decorate": "^1.2.2",
         "vuepress": "^1.0.0-alpha.47",
