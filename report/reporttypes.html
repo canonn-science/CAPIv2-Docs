@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Report Types | CAPIv2 - Documentation</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    
+    <meta name="description" content="Public documentation for the Canonn API v2">
+    
+    <link rel="preload" href="/assets/css/0.styles.4f6b91df.css" as="style"><link rel="preload" href="/assets/js/app.c4040128.js" as="script"><link rel="preload" href="/assets/js/3.1f3f8488.js" as="script"><link rel="preload" href="/assets/js/21.2fd51620.js" as="script"><link rel="prefetch" href="/assets/js/10.4c8e1ebd.js"><link rel="prefetch" href="/assets/js/11.15c794df.js"><link rel="prefetch" href="/assets/js/12.109d0283.js"><link rel="prefetch" href="/assets/js/13.9bf930b4.js"><link rel="prefetch" href="/assets/js/14.dad128a1.js"><link rel="prefetch" href="/assets/js/15.a63095c0.js"><link rel="prefetch" href="/assets/js/16.a027eb29.js"><link rel="prefetch" href="/assets/js/17.f06880ac.js"><link rel="prefetch" href="/assets/js/18.6b8ceaae.js"><link rel="prefetch" href="/assets/js/19.9f2c9313.js"><link rel="prefetch" href="/assets/js/20.300cb2c4.js"><link rel="prefetch" href="/assets/js/22.e94da30c.js"><link rel="prefetch" href="/assets/js/23.fe872655.js"><link rel="prefetch" href="/assets/js/24.fa9d70e0.js"><link rel="prefetch" href="/assets/js/25.e5f26f49.js"><link rel="prefetch" href="/assets/js/26.6726fe83.js"><link rel="prefetch" href="/assets/js/27.f87a3f9d.js"><link rel="prefetch" href="/assets/js/28.11544f2d.js"><link rel="prefetch" href="/assets/js/4.a31b322c.js"><link rel="prefetch" href="/assets/js/5.df7e5fdc.js"><link rel="prefetch" href="/assets/js/6.fbb0509e.js"><link rel="prefetch" href="/assets/js/7.4c20ba8a.js"><link rel="prefetch" href="/assets/js/8.75ba20e3.js"><link rel="prefetch" href="/assets/js/9.2d68bf73.js"><link rel="prefetch" href="/assets/js/vendors~flowchart.8ab2a255.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.4f6b91df.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">CAPIv2 - Documentation</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://canonn.science" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canonn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/canonn-science" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">
+  Home
+</a></div><div class="nav-item"><a href="https://canonn.science" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Canonn
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div><div class="nav-item"><a href="https://github.com/canonn-science" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>Home</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/home/about.html" class="sidebar-link">About</a></li><li><a href="/home/privacy.html" class="sidebar-link">Privacy Policy</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🔑 Authentication</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>📚 API Reference</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🚀 Sites</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>💻 Reporting</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/report/report-process.html" class="sidebar-link">Report Processing</a></li><li><a href="/report/reporting-to-canonn.html" class="sidebar-link">Reporting to Canonn</a></li><li><a href="/report/reporttypes.html" aria-current="page" class="active sidebar-link">Report Types</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/report/reporttypes.html#ap-amphora-plants" class="sidebar-link">(AP) - Amphora Plants</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#bm-bark-mounds" class="sidebar-link">(BM) - Bark Mounds</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#bt-brain-trees" class="sidebar-link">(BT) - Brain Trees</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#cs-crystalline-shards" class="sidebar-link">(CS) - Crystalline Shards</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#fg-fungal-gourds" class="sidebar-link">(FG) - Fungal Gourds</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#fm-fumaroles" class="sidebar-link">(FM) - Fumaroles</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#gb-guardian-beacons" class="sidebar-link">(GB) - Guardian Beacons</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#gen-generation-ships" class="sidebar-link">(GEN) - Generation Ships</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#gr-guardian-ruins" class="sidebar-link">(GR) - Guardian Ruins</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#gs-guardian-structures" class="sidebar-link">(GS) - Guardian Structures</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#gv-gas-vents" class="sidebar-link">(GV) - Gas Vents</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#gy-geysers" class="sidebar-link">(GY) - Geysers</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#ls-lava-spouts" class="sidebar-link">(LS) - Lava Spouts</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#tb-thargoid-barnacles" class="sidebar-link">(TB) - Thargoid Barnacles</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#ts-thargoid-structures" class="sidebar-link">(TS) - Thargoid Structures</a></li><li class="sidebar-sub-header"><a href="/report/reporttypes.html#tw-tube-worms" class="sidebar-link">(TW) - Tube Worms</a></li></ul></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>⚙️️ Validation</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>🏗 Tools</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="report-types"><a href="#report-types" class="header-anchor">#</a> Report Types</h1> <p>Canonn has different endpoints for each report type, you can see the ones we support below. Please note there are some required information, and each report endpoint may have different requirements.</p> <p>There are a few that all contain similar requirements such as the site type, in most cases you should send the journal name. We would prefer that you compare the journal ID via that sites type and send us our version of the journal name (without the prefix <code>$</code> and suffix <code>_name</code> and all lowercase). In the case where a site may not have a correct journal type yet such as Guardian Ruins &amp; structures, Thargoid Structures, and Thargoid barnacles you should send our type.</p> <p>Alternatively for sites that support it you can send the localized codex name so long as it is in english.</p> <p>Also note that for all types there is an &quot;Unknown&quot; type which Canonn uses for old data that has not yet been checked for an updated type. You are welcome to filter this data out should you wish to pull data on known sites.</p> <h2 id="ap-amphora-plants"><a href="#ap-amphora-plants" class="header-anchor">#</a> (AP) - Amphora Plants</h2> <p>Report Endpoint: <code>POST /apreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PRU AED XO-R D4-50&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PRU AED XO-R D4-50 B 2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">1.6085</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-116.2772</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Amphora Plant&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Namix&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known Bark Mound types, see an update list you can query the following <a href="https://api.canonn.tech/aptypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Amphora Plant&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_vents&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2101400</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="bm-bark-mounds"><a href="#bm-bark-mounds" class="header-anchor">#</a> (BM) - Bark Mounds</h2> <p>Report Endpoint: <code>POST /bmreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bleethuae NI-B d674&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bleethuae NI-B d674 2 d a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-28.247204</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-118.083321</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bark Mound&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;InfiniteDreamer&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known Bark Mound types, see an update list you can query the following <a href="https://api.canonn.tech/bmtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bark Mound&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_cone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100301</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="bt-brain-trees"><a href="#bt-brain-trees" class="header-anchor">#</a> (BT) - Brain Trees</h2> <p>Report Endpoint: <code>POST /btreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Synuefe VN-W b46-0&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Synuefe VN-W b46-0 B 2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-8.061136</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-162.813492</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Roseum Brain Tree&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Shoja&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known Brain Tree types, see an update list you can query the following <a href="https://api.canonn.tech/bttypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Roseum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seed&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100201</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Gypseeum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedabcd_01&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100202</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Ostrinum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedabcd_02&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100203</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Viride Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedabcd_03&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100204</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Lividum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedefgh&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100205</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Aureum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedefgh_01&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100206</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Puniceum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedefgh_02&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100207</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Lindigoticum Brain Tree&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_seedefgh_03&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100208</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="cs-crystalline-shards"><a href="#cs-crystalline-shards" class="header-anchor">#</a> (CS) - Crystalline Shards</h2> <p>Report Endpoint: <code>POST /csreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Phroea Hypai BQ-E c28-4&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Phroea Hypai BQ-E c28-4 EF 1 b&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">5.421538</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-116.672745</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Crystalline Shards&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Ernest T Bass&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/cstypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Crystalline Shards&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_ground_struct_ice&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2101500</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="fg-fungal-gourds"><a href="#fg-fungal-gourds" class="header-anchor">#</a> (FG) - Fungal Gourds</h2> <p>Report Endpoint: <code>POST /fgreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Prooe Flyuae FQ-Y e662&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Prooe Flyuae FQ-Y e662 3 b a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">35.651417</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-46.550655</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Luteolum Anemone&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chrismasterski&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/fgtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Luteolum Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphere&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100401</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Croceum Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereabcd_01&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100402</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Puniceum Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereabcd_02&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100403</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Roseum Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereabcd_03&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100404</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Blatteum Bioluminescent Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereefgh&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100405</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Rubeum Bioluminescent Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereefgh_01&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100406</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Prasinum Bioluminescent Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereefgh_02&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100407</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Roseum Bioluminescent Anemone&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_sphereefgh_03&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100408</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="fm-fumaroles"><a href="#fm-fumaroles" class="header-anchor">#</a> (FM) - Fumaroles</h2> <p>Report Endpoint: <code>POST /fmreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi KB-W d2-1103&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi KB-W d2-1103 BC 5 a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">58.798756</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">10.918672</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chrismasterski&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/fmtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sulphur Dioxide Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_fumarole_sulphurdioxidemagma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400102</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_fumarole_watergeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400108</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Silicate Vapour Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_fumarole_silicatevapourgeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400114</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sulphur Dioxide Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_sulphurdioxidemagma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400152</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_watergeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400158</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Carbon Dioxide Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_carbondioxidegeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400159</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Ammonia Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_ammoniageysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400160</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Methane Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_methanegeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400161</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Nitrogen Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_nitrogengeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400162</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Silicate Vapour Ice Fumarole&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icefumarole_silicatevapourgeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400164</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="gb-guardian-beacons"><a href="#gb-guardian-beacons" class="header-anchor">#</a> (GB) - Guardian Beacons</h2> <p>Report Endpoint: <code>POST /gbreports</code></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please note this report endpoint contains a non-typical structure compared to most of our report endpoints</p></div> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE IL-N C23-15&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE IL-N C23-15 2 A&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;messageSystem&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE IL-N C23-19&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;messageBody&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE IL-N C23-19 B 2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;messageLatitude&quot;</span><span class="token operator">:</span> <span class="token number">12.18</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;messageLongitude&quot;</span><span class="token operator">:</span> <span class="token number">44.31</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;joulupunikki&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Guardian Beacons have no known type.</p> <h2 id="gen-generation-ships"><a href="#gen-generation-ships" class="header-anchor">#</a> (GEN) - Generation Ships</h2> <p>Report Endpoint: <code>POST /genreports</code></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please note this report endpoint contains a non-typical structure compared to most of our report endpoints</p></div> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MU CASSIOPEIA&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;orbitBody&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MU CASSIOPEIA C 1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;shipName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Artemis&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;directionSystem&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;distance&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zzz_Unknown&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Generation Ships have no known type.</p> <h2 id="gr-guardian-ruins"><a href="#gr-guardian-ruins" class="header-anchor">#</a> (GR) - Guardian Ruins</h2> <p>Report Endpoint: <code>POST /grreports</code></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please note this report endpoint contains a non-typical structure compared to most of our report endpoints</p></div> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE XR-H D11-102&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE XR-H D11-102 1 B&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-31.7347</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-128.9212</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Beta&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zzz_Unknown&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/grtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Alpha&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Beta&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Gamma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="gs-guardian-structures"><a href="#gs-guardian-structures" class="header-anchor">#</a> (GS) - Guardian Structures</h2> <p>Report Endpoint: <code>POST /gsreports</code></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please note this report endpoint contains a non-typical structure compared to most of our report endpoints</p></div> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE LY-I B42-2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SYNUEFE LY-I B42-2 C 2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">52.6791</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">115.2503</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Fistbump&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;hasDatabank&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Doom666&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/gstypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Lacrosse&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_tiny_001&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Crossroads&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_tiny_002&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Fistbump&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_tiny_003&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hammerbot&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_small_001&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;weapon&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bear&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_small_002&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;weapon&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Bowl&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_small_003&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;weapon&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Turtle&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_small_005&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;module&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">9</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Robolobster&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_medium_001&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vessel&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">10</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Squid&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_medium_002&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vessel&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">11</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Stickyhand&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;ancient_medium_003&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;blueprint&quot;</span><span class="token operator">:</span> <span class="token string">&quot;vessel&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="gv-gas-vents"><a href="#gv-gas-vents" class="header-anchor">#</a> (GV) - Gas Vents</h2> <p>Report Endpoint: <code>POST /gvreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi NO-H d10-443&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi NO-H d10-443 1 c a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-22.072763</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-155.074356</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sulphur Dioxide Gas Vent&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chrismasterski&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/gvtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Sulphur Dioxide Gas Vent&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_gas_vents_sulphurdioxidemagma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400402</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Gas Vent&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_gas_vents_watergeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400408</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Carbon Dioxide Gas Vent&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_gas_vents_carbondioxidegeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400409</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Silicate Vapour Gas Vent&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_gas_vents_silicatevapourgeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400414</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="gy-geysers"><a href="#gy-geysers" class="header-anchor">#</a> (GY) - Geysers</h2> <p>Report Endpoint: <code>POST /gyreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi KB-W d2-1103&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi KB-W d2-1103 BC 5 a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">17.83189</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">151.059326</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Ice Geyser&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chrismasterski&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/gytypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Geyser&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_geysers_watergeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400208</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Water Ice Geyser&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icegeysers_watergeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400258</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Carbon Dioxide Ice Geyser&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icegeysers_carbondioxidegeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400259</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Ammonia Ice Geyser&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icegeysers_ammoniageysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400260</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Methane Ice Geyser&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icegeysers_methanegeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400261</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Nitrogen Ice Geyser&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_icegeysers_nitrogengeysers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400262</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="ls-lava-spouts"><a href="#ls-lava-spouts" class="header-anchor">#</a> (LS) - Lava Spouts</h2> <p>Report Endpoint: <code>POST /lsreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi VO-Q d5-378&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Flyae Flyi VO-Q d5-378 C 2&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-43.20908</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-109.786705</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Silicate Magma Lava Spout&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Chrismasterski&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/lstypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Silicate Magma Lava Spout&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_lava_spouts_silicatemagma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400306</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Iron Magma Lava Spout&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_lava_spouts_ironmagma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">1400307</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="tb-thargoid-barnacles"><a href="#tb-thargoid-barnacles" class="header-anchor">#</a> (TB) - Thargoid Barnacles</h2> <p>Report Endpoint: <code>POST /tbreports</code></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please note this report endpoint contains a non-typical structure compared to most of our report endpoints</p></div> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PLEIONE&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PLEIONE 11 A&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">2.3189</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">177.2434</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Alpha&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cycle&quot;</span><span class="token operator">:</span> <span class="token string">&quot;B&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zzz_Unknown&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/tbtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Mega&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">3</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Alpha&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token number">1</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">4</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Beta&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token number">2</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">5</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Gamma&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token number">3</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">6</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Delta&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token number">4</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">7</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Epsilon&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token number">5</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">8</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Zeta&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;metaAlloyCount&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div><h2 id="ts-thargoid-structures"><a href="#ts-thargoid-structures" class="header-anchor">#</a> (TS) - Thargoid Structures</h2> <p>Report Endpoint: <code>POST /tsreports</code></p> <div class="custom-block warning"><p class="custom-block-title">WARNING</p> <p>Please note this report endpoint contains a non-typical structure compared to most of our report endpoints</p></div> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HIP 19026&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;HIP 19026 B 1 C&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-17.9575</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">-152.6994</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;status&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Inactive&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;zzz_Unknown&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Thargoid Structures have no known type. (Though work is being done to classify them)</p> <h2 id="tw-tube-worms"><a href="#tw-tube-worms" class="header-anchor">#</a> (TW) - Tube Worms</h2> <p>Report Endpoint: <code>POST /twreports</code></p> <p>Example Report Structure with minimum required data:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;userType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pc&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;new&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;systemName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Byoomeae NY-R e4-4985&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;bodyName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Byoomeae NY-R e4-4985 5&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span> <span class="token number">-4.245615</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span> <span class="token number">96.549957</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Roseum Sinuous Tubers&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;cmdrName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Panhyper&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;isBeta&quot;</span><span class="token operator">:</span> <span class="token boolean">false</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;clientVersion&quot;</span><span class="token operator">:</span> <span class="token string">&quot;EDMC-Canonn.2.0.1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;reportStatus&quot;</span><span class="token operator">:</span> <span class="token string">&quot;pending&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>Known types, see an update list you can query the following <a href="https://api.canonn.tech/twtypes" target="_blank" rel="noopener noreferrer">endpoint<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">1</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Unknown&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token null keyword">null</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>
+    <span class="token property">&quot;id&quot;</span><span class="token operator">:</span> <span class="token number">2</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;type&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Roseum Sinuous Tubers&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;codex_ent_tube&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;journalID&quot;</span><span class="token operator">:</span> <span class="token number">2100501</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">]</span>
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/report/reporting-to-canonn.html" class="prev">
+        Reporting to Canonn
+      </a></span> <span class="next"><a href="/validation/report-to-site.html">
+        Report Processing and Validation
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.c4040128.js" defer></script><script src="/assets/js/3.1f3f8488.js" defer></script><script src="/assets/js/21.2fd51620.js" defer></script>
+  </body>
+</html>
